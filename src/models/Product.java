@@ -60,7 +60,7 @@ public class Product {
         return initial_price;
     }
 
-    public void increasePrice() {;
+    public void increasePrice() {
         this.price += 100;
     }
 
@@ -78,7 +78,7 @@ public class Product {
         try{
             stateObj.startSale(this);
         } catch (StateException e) {
-            System.out.println(e.getMessage());;
+            System.out.println(e.getMessage());
         }
     }
 
@@ -86,7 +86,7 @@ public class Product {
         try{
             stateObj.raisePrice(this);
         } catch (StateException e) {
-            System.out.println(e.getMessage());;
+            System.out.println(e.getMessage());
         }
     }
 
@@ -94,7 +94,7 @@ public class Product {
         try{
             stateObj.withdraw(this);
         } catch (StateException e) {
-            System.out.println(e.getMessage());;
+            System.out.println(e.getMessage());
         }
     }
 
@@ -107,7 +107,7 @@ public class Product {
                 this.honoraryCode = context.generateCode(this.id);
             }
         } catch (StateException e) {
-            System.out.println(e.getMessage());;
+            System.out.println(e.getMessage());
         }
     }
 
