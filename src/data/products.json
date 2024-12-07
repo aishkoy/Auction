@@ -18,7 +18,7 @@
     "name": "Умные часы SmartLife",
     "price": 124.99,
     "honoraryCode": "",
-    "state": "на складе"
+    "state": "на торгах"
   },
   {
     "id": "ELEC-004",
@@ -58,7 +58,7 @@
   {
     "id": "ELEC-009",
     "name": "Робот-пылесос CleanBot",
-    "price": 239.99,
+    "price": 339.99,
     "honoraryCode": "",
     "state": "на торгах"
   },

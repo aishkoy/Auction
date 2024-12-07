@@ -66,6 +66,7 @@ public class Product {
     }
 
     public void increasePrice() {
+        System.out.println("Фиксированное значение подъема цены: 100");
         this.price += 100;
     }
 
