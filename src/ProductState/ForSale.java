@@ -35,6 +35,7 @@ public class ForSale implements State {
         } else{
             product.setState("продан");
             product.setStateObj(new Sold());
+            System.out.println("Товар был успешно продан!");
         }
     }
 }

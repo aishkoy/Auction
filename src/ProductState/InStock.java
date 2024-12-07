@@ -7,6 +7,7 @@ public class InStock implements State {
 
     @Override
     public void startSale(Product product){
+        System.out.println("Вы успешно выставили товар на торги!");
         product.setState("на торгах");
         product.setStateObj(new ForSale());
     }

@@ -4,14 +4,14 @@
     "name": "Смартфон Galaxy X20",
     "price": 859.99,
     "honoraryCode": "",
-    "state": "на торгах"
+    "state": "на складе"
   },
   {
     "id": "ELEC-002",
     "name": "Ноутбук ProBook 450",
     "price": 1199.99,
     "honoraryCode": "",
-    "state": "продан"
+    "state": "на складе"
   },
   {
     "id": "GAD-003",

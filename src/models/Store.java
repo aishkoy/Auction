@@ -7,8 +7,13 @@ import java.util.InputMismatchException;
 import java.util.Scanner;
 
 public class Store {
-    ProductsReader pr = new ProductsReader("products");
-    Product[] products = pr.getGoods();
+    private final ProductsReader pr;
+    private final Product[] products;
+
+    public Store(ProductsReader pr) {
+        this.pr = pr;
+        products = pr.getGoods();
+    }
 
     private void printStore() {
         System.out.println("""
@@ -121,7 +126,7 @@ public class Store {
                 return num;
 
             } catch (InputMismatchException | IllegalArgumentException e) {
-                System.out.println("Неверный ввод!!!" + e.getMessage());
+                System.out.println("Неверный ввод: " + e.getMessage() + "\n Попвторите попытку: ");
                 return getNumber(max, sentence);
             }
         }
