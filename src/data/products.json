@@ -2,64 +2,71 @@
   {
     "id": "ELEC-001",
     "name": "Смартфон Galaxy X20",
-    "price": 559.99,
-    "honoraryCode": "267d031",
-    "state": "продан"
+    "price": 859.99,
+    "honoraryCode": "",
+    "state": "на торгах"
   },
   {
     "id": "ELEC-002",
     "name": "Ноутбук ProBook 450",
-    "price": 1099.99,
-    "honoraryCode": "775e346",
+    "price": 1199.99,
+    "honoraryCode": "",
     "state": "продан"
   },
   {
     "id": "GAD-003",
     "name": "Умные часы SmartLife",
     "price": 124.99,
-    "state": "на торгах"
+    "honoraryCode": "",
+    "state": "на складе"
   },
   {
     "id": "ELEC-004",
     "name": "Планшет TabMax Pro",
     "price": 349.99,
+    "honoraryCode": "",
     "state": "на складе"
   },
   {
     "id": "ELEC-005",
     "name": "Беспроводные наушники SoundPro",
     "price": 89.99,
-    "honoraryCode": "253a4b5d",
-    "state": "продан"
+    "honoraryCode": "",
+    "state": "на складе"
   },
   {
     "id": "ELEC-006",
     "name": "Игровая консоль GameStation 5",
     "price": 499.99,
+    "honoraryCode": "",
     "state": "на торгах"
   },
   {
     "id": "ELEC-007",
     "name": "Фотокамера PhotoMaster 3000",
     "price": 699.99,
+    "honoraryCode": "",
     "state": "на складе"
   },
   {
     "id": "TRAN-008",
     "name": "Электросамокат EcoRide",
     "price": 299.99,
+    "honoraryCode": "",
     "state": "на торгах"
   },
   {
     "id": "ELEC-009",
     "name": "Робот-пылесос CleanBot",
     "price": 239.99,
+    "honoraryCode": "",
     "state": "на торгах"
   },
   {
     "id": "ELEC-010",
     "name": "Кофемашина CoffeeMax",
     "price": 159.99,
+    "honoraryCode": "",
     "state": "на складе"
   }
 ]

@@ -1,6 +1,5 @@
 package ProductState;
 
-import CodeGenerationStrategy.HonoraryCode;
 import Exceptions.StateException;
 import models.Product;
 
@@ -24,7 +23,7 @@ public class ForSale implements State {
             System.out.println("Так как изначальная цена товара не была изменена, он будет возращен на склад.");
             product.setState("на складе");
             product.setStateObj(new InStock());
-        } else {
+        } else{
             throw new StateException("Ошибка: Так как товар уже в резерве, его можно только выдать!");
         }
     }

@@ -103,18 +103,27 @@ public class Store {
         private int getNumber(int max, String sentence) {
             System.out.print(sentence);
             try {
-                int num = sc.nextInt();
+                String input = sc.nextLine().strip();
+                if(input.isBlank()){
+                    throw new IllegalArgumentException("Число не может быть пустым!");
+                }
+
+                int num;
+                try {
+                    num = Integer.parseInt(input);
+                } catch (NumberFormatException e) {
+                    throw new IllegalArgumentException("Введите только цифры!");
+                }
+
                 if (num < 1 || num > max) {
-                    throw new IllegalArgumentException();
+                    throw new IllegalArgumentException("Число вне допустимого диапазона!!");
                 }
                 return num;
+
             } catch (InputMismatchException | IllegalArgumentException e) {
-                System.out.println("Неверный ввод!!!");
-                sc.nextLine();
+                System.out.println("Неверный ввод!!!" + e.getMessage());
                 return getNumber(max, sentence);
             }
         }
-
     }
-
 }

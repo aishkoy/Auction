@@ -14,7 +14,7 @@ public class Product {
     private String honoraryCode;
     private String state;
 
-    private transient final double initial_price;
+    private transient double initialPrice;
     private transient State stateObj;
 
     public Product(String id, String name, double price, String honoraryCode, String state) {
@@ -22,9 +22,13 @@ public class Product {
         this.name = name;
         this.price = price;
         this.honoraryCode = honoraryCode;
-        this.initial_price = price;
         this.state = state;
+        this.initialPrice = price;
         initializeState();
+    }
+
+    public void setInitialPrice() {
+        this.initialPrice = this.price;
     }
 
     public void initializeState() {
@@ -42,6 +46,7 @@ public class Product {
                 this.stateObj = new InStock();
                 this.state = "на складе";
         }
+        setInitialPrice();
     }
 
     public void setState(String state) {
@@ -57,7 +62,7 @@ public class Product {
     }
 
     public double getInitialPrice() {
-        return initial_price;
+        return initialPrice;
     }
 
     public void increasePrice() {
@@ -70,7 +75,7 @@ public class Product {
 
     @Override
     public String toString() {
-        return String.format("║ %-7s ║  %-30s ║  %-8s ║ %-10s ║ %-15s║", this.id, this.name, this.price, this.state ,this.honoraryCode);
+        return String.format("║ %-8s ║  %-30s ║  %-8s ║ %-10s ║ %-15s║", this.id, this.name, this.price, this.state ,this.honoraryCode);
     }
 
 
